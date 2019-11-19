@@ -2,12 +2,24 @@ package ru.rosbank.javaschool.exception;
 
 public class InvalidDataException extends RuntimeException {
 
-    public InvalidDataException(String msg){
-        super(msg);
+    public InvalidDataException() {
+        super();
     }
-    public InvalidDataException(Throwable reason) {
-        super (reason);
 
+    public InvalidDataException(String message) {
+        super(message);
+    }
+
+    public InvalidDataException(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+    public InvalidDataException(Throwable cause) {
+        super(cause);
+    }
+
+    public InvalidDataException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
     }
 
 }
